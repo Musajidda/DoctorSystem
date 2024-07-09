@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="images/logo.jpg" alt="Logo" class="header-logo">
+            <h1>Medical Diagnosis System</h1>
+            <nav>
+                
+                <a href="index.html">Symptom-checker</a>
+                <a href="patient-data.html">Patient Data</a>
+                <a href="decision-support.html">Decision Support</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Welcome</h2>
+                <p>Your health, our priority.</p>
+            </section>
+            <section id="patient-data">
+                <h2>Patient Data Management</h2>
+                <!-- CRUD operations form -->
+            </section>
+            <section id="symptom-checker">
+                <h2>Symptom Checker</h2>
+                <form id="symptom-form">
+                    <label for="symptoms">Enter Symptoms:</label>
+                    <input type="text" id="symptoms" name="symptoms" required>
+                    <button type="submit">Check Diagnosis</button>
+                </form>
+                <div id="diagnosis-result"></div>
+            </section>
+            <section id="decision-support">
+                <h2>Decision Support System</h2>
+                <!-- Recommendations and treatment options -->
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Medical Diagnosis System</p>
+            <p>By GROUP 3</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

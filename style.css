@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+section {
+    margin: 20px 0;
+}
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+ 
+    width: 100%;
+    bottom: 0;
+}
+
+
+ /* the style for patient data page */
+
+ .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+#patient-data {
+    margin-top: 30px;
+}
+
+#patient-form {
+    margin-bottom: 20px;
+}
+
+#patient-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#patient-form input[type="text"],
+#patient-form input[type="number"],
+#patient-form select,
+#patient-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#patient-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#patient-list {
+    margin-top: 20px;
+}
+
+.patient-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+
+
+ /* the style for decision support page */
+ #decision-support {
+    margin-top: 30px;
+}
+
+#decision-support-form {
+    margin-bottom: 20px;
+}
+
+#decision-support-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#decision-support-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#decision-support-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#recommendations {
+    margin-top: 20px;
+}
+
+#recommendation-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recommendation-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.header-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-left: 20px; /* Adjust margin for positioning */
+}

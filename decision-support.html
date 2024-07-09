@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Logo" class="header-logo">
+        <h1>Medical Diagnosis System</h1>
+        <nav>
+            
+            <a href="index.html">Symptom-checker</a>
+            <a href="patient-data.html">Patient Data</a>
+            <a href="decision-support.html">Decision Support</a>
+        </nav>
+    </header>
+    <div class="container">
+       
+        
+        <!-- Symptom Checker Section (Existing) -->
+        <section id="symptom-checker">
+            <h2>Symptom Checker</h2>
+            <form id="symptom-form">
+                <label for="symptoms">Enter Symptoms:</label>
+                <input type="text" id="symptoms" name="symptoms" placeholder="e.g., fever, headache, nausea" required>
+                <button type="submit">Diagnose</button>
+            </form>
+            <div id="diagnosis-result"></div>
+        </section>
+
+        <!-- Patient Data Management Section (Existing) -->
+        <section id="patient-data">
+            <h2>Patient Data Management</h2>
+            <form id="patient-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" name="patient-name" required>
+                
+                <label for="patient-age">Patient Age:</label>
+                <input type="number" id="patient-age" name="patient-age" required>
+                
+                <label for="patient-gender">Patient Gender:</label>
+                <select id="patient-gender" name="patient-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="patient-symptoms">Symptoms:</label>
+                <textarea id="patient-symptoms" name="patient-symptoms" rows="4" required></textarea>
+                
+                <button type="submit">Add Patient</button>
+            </form>
+
+            <div id="patient-list">
+                <!-- Display patient data here -->
+            </div>
+        </section>
+
+        <!-- Enhanced Decision Support Section -->
+        <section id="decision-support">
+            <h2>Decision Support</h2>
+            <form id="decision-support-form">
+                <label for="patient-select">Select Patient:</label>
+                <select id="patient-select" name="patient-select">
+                    <!-- Populate options dynamically using JavaScript -->
+                </select>
+                <button type="submit">Get Recommendations</button>
+            </form>
+
+            <div id="recommendations">
+                <h3>Recommendations and Treatment Options</h3>
+                <ul id="recommendation-list">
+                    <!-- Display recommendations dynamically -->
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
